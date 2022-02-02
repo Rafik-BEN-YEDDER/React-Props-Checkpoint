@@ -1,24 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Profile from './profile/Profile';
+import myImage from './rafik.jpg'
 function App() {
+  const handleName =(x)=>alert(x)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Profile name= "Rafik" bio= "NINJA" profession="Engineer"  a={handleName}> https://st.depositphotos.com/2400497/3428/v/600/depositphotos_34287663-stock-illustration-cartoon-ninja.jpg </Profile>
     </div>
+    
   );
 }
 
